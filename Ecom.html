@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Roboto:wght@100&display=swap" rel="stylesheet">
+<style>
+
+body{
+    scroll-behavior: smooth;
+    font-family: 'Roboto', sans-serif;
+    /*font-family: 'Akaya Kanadaka', cursive;*/
+    background:  url(bags.webp);
+    background-repeat: no-repeat;
+}
+.nav1{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    box-shadow: 2px 0px 3px gray;
+}
+.nav1 .left{
+    font-size: 15px;
+    letter-spacing: 2px;
+    font-weight: bold;
+
+}
+.nav1 .left a{
+    text-decoration: none;
+    color: brown;
+    font-weight: bold;
+}
+.nav1 .right i{
+    font-size: 30px;
+    margin: 6px;
+    padding: 8px 10px;
+    text-decoration: none;
+    color: black;
+    background-color: rgb(238, 221, 221);
+    border-radius: 20px;
+}
+.nav1 .right i:hover{
+    background-color: rgb(255, 255, 255);
+}
+.nav2{
+    display: flex;
+    padding: 80px 100px;
+}
+.nav2 .left{
+    color: rgb(45, 20, 20);
+    font-size: 16px;
+    padding: 12px 40px;
+    align-items: center;
+    font-weight: bolder;
+}
+.nav2 .mid{
+    padding: 4px 106px;
+    font-size: 20px;
+    align-items: center;
+}
+.nav2 .mid H1{
+    padding: 10px 80px;
+    font-size: 55px;
+    font-weight: bolder;
+    font-style:bold;
+    color: rgb(111, 61, 61);
+    letter-spacing: 3px;
+    font-family: 'Akaya Kanadaka', cursive;
+    text-align: center;
+
+}
+H1 span{
+    font-size: 30px;
+    color: rgb(155, 79, 79);
+}
+.nav2 .mid p{
+    font-size: 14px;
+    align-items: center;
+    padding: 0px 100px;
+    color: rgb(61, 11, 11);
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+.nav2 .right button{
+    margin-top: 20px;
+    margin-left: 100px;
+    padding: 8px 8px;
+    color: rgb(46, 18, 18);
+    align-items: center;
+    background-color: rgb(196, 164, 164);
+    border-color: beige;
+    border-radius: 6px;
+}
+.nav2 .right button:hover{
+    background-color: rgb(255, 255, 255);
+}
+.nav2 .right i{
+    padding: 6px 10px;
+    font-size:14PX;
+}
+.nav3{
+    border: 4px;
+    border-radius: 2px;
+    box-shadow: 6px 0px 6px rgb(0, 0, 0);
+    width: auto;
+    margin: 60px 0px;
+    padding: 0px 130px;
+    background-color: rgb(130, 62, 62);
+    
+}
+.nav3 li{
+
+    display: inline-block;
+    font-size: 16PX;
+    padding: 20px 46px;
+    align-items: center;
+    color: rgb(39, 13, 13);
+}
+
+.nav3 i{
+    padding: 2px 2px;
+    color: rgb(202, 186, 186);
+}
+.nav3 i:hover{
+    border: 4px;
+    border-radius: 2px;
+    border-color: black;
+    padding: 4px 4px;
+}
+
+.featured{
+    padding: 50px 100px;
+    text-align: center;
+}
+
+/*.text p{
+
+    padding: 0px 0px;
+    font-size: 10px;
+    border-radius: 6px;
+    border-color: beige;
+    /*background-color: rgb(175, 171, 171);*/
+    /*padding-top: 80px;
+    font-size: 50px;
+    color: rgb(199, 153, 153);
+    font-weight: bolder;
+    letter-spacing: 0.2rem;
+}*/
+.text button:hover{
+    cursor: pointer;
+    background-color: rgb(255, 254, 254);
+    transition:ease-in;
+}
+
+.text h1{
+    font-size: 50px;
+    padding: 4px 4px;
+    font-weight: bolder;
+    color: rgb(42, 42, 37);
+    background-color: white;
+    background: linear-gradient(rgba(233, 230, 230, 0.181),rgba(238, 231, 231, 0.184));
+    margin: 100px 300px;
+    margin-top: 220px;
+   
+}
+.new{
+    margin-top: 0px;
+    padding-top: 10px;
+    background-color: whitesmoke;
+    text-align: center;
+}
+.new h1{
+    letter-spacing: 4px;
+    font-weight: bolder;
+    color: rgb(51, 18, 18);
+}
+.new i{
+    font-size: 50px;
+    color: rgb(48, 11, 11);
+}
+.new h2{
+    font-size: 18px;
+    letter-spacing: 2px;
+    color: rgb(99, 73, 73);
+}
+.cart{
+    text-align: left;
+}
+.cart img{
+    size: 12px;
+}
+
+header{
+    height: 950px;
+    /*background: linear-gradient(rgba(216, 207, 207, 0.267),rgba(22, 13, 13, 0.184));*/
+}
+
+.latest{
+    padding: 25px 50px;
+}
+.product-intro{
+    text-align: center;
+}
+.product-intro h1{
+    color: var(--primary);
+    letter-spacing: 0.2rem;
+    font-size: 2rem;
+    font-weight: bolder;
+}
+.product-intro p{
+    color: grey;
+    margin:15px 0px;
+}
+
+.cart-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.cart-container{
+    padding: 35px 0px;
+    flex-basis: 10%;
+}
+.cart img{
+   width: 100%;
+}
+.cart1 img{
+    height: 300px;
+    width: 300px;
+}
+.cart2 img{
+    height: 300px;
+    width: 300px;
+}
+.cart3 img{
+    height: 300px;
+    width: 300px;
+}
+.cart i{
+    color: goldenrod;
+    margin: 10px 0px;
+}
+.cart {
+    text-align: center;
+}
+.cart button{
+    color: white;
+    background-color: grey;
+    margin-top: 15px;
+    padding: 8px 10px;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+}
+
+</style>
+</head>
+<body>
+    
+    <header>
+        <nav class="nav1">
+            <div class="left">
+                <span>Welcome to my shop</span>
+                <a href="login.html">Login</a>
+                Or
+                <a href="form.html">Register</a>
+            </div>
+            <div class="right">
+                <a href="https://www.facebook.com/profile.php?id=100026245654137"><i class="fa fa-facebook fa-beat " ></i></a>
+                <a href="https://www.instagram.com/shivani.s_10/"><i class="fa fa-instagram fa-beat"></i></a>
+                <a href="https://web.whatsapp.com/"><i class="fa fa-whatsapp fa-beat"></i></a>
+                <a href="https://www.linkedin.com/company/login/"><i class="fa fa-linkedin fa-beat"></i></a>
+            </div>
+        </nav>
+        <nav class="nav2">
+            <div class="left">
+                <i class="fa fa-phone fa-beat">7697900200</i> <br>
+                <i class="fa fa-envelope fa-beat">shivanimodi1042@gmail.com</i>
+            </div>
+            <div class="mid">
+                <H1>Epi<span>Craft</span></H1>
+                <P>Everything for Everyone</P>
+            </div>
+            <div class="right">
+                <button>Contact Us</button>
+                <i class ="fa fa-search "> Search </i>
+            </div>
+        </nav>
+
+        <nav class="nav3">
+            <div>
+                <ul>
+                <a href="#"><li><i class="fa fa-home">Home</i></li></a>
+                <a href="#"><li><i class="fa fa-user">Boys</i></li></a>
+                <a href="#"><li><i class="fa fa-female user">Girls</i></li></a>
+                <a href="#"><li><i class="fa fa-users">Categories</i>
+                <select name="referrer">
+            <option value="">(Categories)</option>
+            <option value="1">Aadhar Number</option>
+            <option value="2">PAN Card</option>
+            <option value="3">Driving License</option>
+          </select>
+                </li></a>
+                <a href="#"><li><i class="fa fa-anchor">Toys</i>
+                   <!--<ul>
+                    <li><a href="#"><i class="fa fa-clipboard"></i>Wooden</a></li>
+                    <li><a href="#"><i class="fa fa-ball"></i>Plastic</a></li>
+                    <li><a href="#"><i class="fa fa-Teddy"></i>Soft</a></li>
+                   </ul>-->
+                </li></a>
+                <a href="#"><li><i class="fa fa-calendar">Special offers</i></li></a>
+                </ul>
+            </div>
+        </nav>
+
+        <section class="featured">
+            <div class="text">
+                <H1>--Flat 30% Off--</H1>
+            </div>
+        </section>
+        <!--<section class="new">
+            <div class="first">
+                <h1>Best Offers</h1>
+                <h2>Best offers and great deals.</h2>
+                <br>
+                <a href="#"> <i class="fa fa-arrow-down"></i></a>
+            </div>
+        </section>-->
+    </header>
+
+    <!-- posts-->
+
+    <section class="latest"></section>
+    <div class="product-intro">
+        <h1>New <span> Arrivals</span></h1>    
+        <p>Top deals coming your way do not miss out on this. </p>
+    </div>
+    <div class="cart-container">
+    <div class="cart">   
+    <div class="cart1">
+        <div>
+            <img src="floral.jpg" alt="">
+        </div>
+        <h1>Floral Dress</h1>
+        <span>
+            <i class=" fa fa-star"></i> 
+            <i class=" fa fa-star"></i> 
+            <i class=" fa fa-star"></i> 
+            <i class=" fa fa-star"></i> 
+        </span>
+        <p>$200.00</p>
+        <button>Add to cart</button>
+    </div>
+</div>
+<div class="cart">   
+    <div class="cart2">
+        <div>
+            <img src="dress3.jpg" alt="">
+        </div>
+        <h1>Floral Dress</h1>
+        <span>
+            <i class=" fa fa-star"></i> 
+            <i class=" fa fa-star"></i> 
+            <i class=" fa fa-star"></i> 
+            <i class=" fa fa-star"></i> 
+        </span>
+        <p>$200.00</p>
+        <button>Add to cart</button>
+    </div>
+</div>
+    <div class="cart">   
+    <div class="cart3">
+        <div>
+            <img src="dress4.jpg" alt="">
+        </div>
+        <h1>Floral Dress</h1>
+        <span>
+            <i class=" fa fa-star"></i> 
+            <i class=" fa fa-star"></i> 
+            <i class=" fa fa-star"></i> 
+            <i class=" fa fa-star"></i> 
+        </span>
+        <p>$200.00</p>
+        <button>Add to cart</button>
+    </div>
+</div>
+</div>
+
+    <script>
+        let learningbtn = document.querySelector('.nav1 .left a');
+        learningbtn.addEventListener('click', showMsg);
+        function showMsg(){
+            let name1 = prompt('username');
+            learningbtn.textContent = name1;
+            let name2 = prompt('password');
+            learningbtn.textContent = 'shivani sahu ' +name2;
+
+        }
+    </script>
+</body>
+</html>
